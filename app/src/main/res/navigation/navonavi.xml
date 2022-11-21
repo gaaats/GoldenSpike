@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navonavi"
+    app:startDestination="@id/gameeeFragment">
+
+    <fragment
+        android:id="@+id/gameeeFragment"
+        android:name="com.tapenjoy.actx.gogogoa.GameeeFragment"
+        android:label="fragment_gameee"
+        tools:layout="@layout/fragment_gameee" >
+        <action
+            android:id="@+id/action_gameeeFragment_to_inffffoFragment"
+            app:enterAnim="@anim/onesignal_fade_in"
+            app:exitAnim="@anim/onesignal_fade_out"
+            app:popEnterAnim="@anim/onesignal_fade_in"
+            app:popExitAnim="@anim/onesignal_fade_out"
+            app:destination="@id/inffffoFragment" />
+        <action
+            android:id="@+id/action_gameeeFragment_to_ruuuelsFragment"
+            app:enterAnim="@anim/onesignal_fade_in"
+            app:exitAnim="@anim/onesignal_fade_out"
+            app:popEnterAnim="@anim/onesignal_fade_in"
+            app:popExitAnim="@anim/onesignal_fade_out"
+            app:destination="@id/ruuuelsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ruuuelsFragment"
+        android:name="com.tapenjoy.actx.gogogoa.RuuuelsFragment"
+        android:label="fragment_ruuuels"
+        tools:layout="@layout/fragment_ruuuels" />
+    <fragment
+        android:id="@+id/inffffoFragment"
+        android:name="com.tapenjoy.actx.gogogoa.InffffoFragment"
+        android:label="fragment_inffffo"
+        tools:layout="@layout/fragment_inffffo" />
+</navigation>
